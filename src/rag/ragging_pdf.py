@@ -17,7 +17,7 @@ if API_KEY is None:
 modelo = ChatOpenAI(
     openai_api_key=API_KEY,
     openai_api_base="https://openrouter.ai/api/v1",     
-    model_name="meta-llama/llama-3-8b-instruct"
+    model_name="openai/gpt-oss-20b:free"
 )
 
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
